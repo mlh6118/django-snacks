@@ -1,8 +1,21 @@
-<nav>
-    <a href="{% url 'home' %}">Home</a>
-    <a href="{% url 'about' %}">About</a>
-</nav>
+<!DOCTYPE html>
+<html>
 
-{% block content %}
-<h1> This is the Default Template</h1>
-{% endblock content %}
+    <head>
+        <nav>
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'about' %}">About</a>
+        </nav>
+    </head>
+
+    <body>
+        {% block content %}
+        <h1> This is the Default Template</h1>
+        {% endblock content %}
+    </body>
+
+    <footer>
+        &copy;2022 Marni Hager
+    </footer>
+
+</html>
