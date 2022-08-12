@@ -28,6 +28,7 @@ class SnacksTestPageFailures(SimpleTestCase):
         self.assertNotEqual(response.status_code, 500)
 
 
+
 class SnacksTestTemplates(SimpleTestCase):
     def test_home_page_template(self):
         url = reverse('home')
